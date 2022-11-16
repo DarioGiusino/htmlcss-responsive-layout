@@ -17,6 +17,15 @@ body{
     padding-top: 80px;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+i{
+    margin-right: 8px;
+}
+
 /* utilities */
 .container{
     max-width: 500px;
@@ -106,12 +115,59 @@ body{
     
 }
 
+#fixed-header li:last-child a{
+    color: #000;
+}
+
 /* features */
 .features-card{
     background-color: var(--lightblue);
-    border-radius: 30px;
-    min-height: 350px;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
 }
+
+.fb-33 .features-card{
+    text-align: center;
+    color: var(--blue);
+}
+
+.features-card h4{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.features-card p{
+    color: #5a6e7f;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.features-card a{
+    display: inline-block;
+    background-color: var(--blue);
+    color: #fff;
+    margin: 25px 0px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.features-card img{
+    position: relative;
+    top: 30px;
+}
+
+.fb-33 .features-card i{
+    font-size: 100px;
+    margin-bottom: 25px;
+}
+
+
 
 
 
@@ -130,6 +186,15 @@ body{
         align-content: flex-start;
     }
 
+    .col{
+        display: flex;
+    }
+
+    /* features section */
+    .features-card img{
+        max-width: 60%;
+    }
+
     /* benefits section */
     #benefits .col{
         flex-basis: 50%;
@@ -140,7 +205,7 @@ body{
 @media screen and (min-width: 992px){
     /* utilities */
     .container{
-        max-width: 800px;
+        max-width: 900px;
     }
 
     /* header */
@@ -150,6 +215,19 @@ body{
 
     .hamburger-menu{
         display: none;
+    }
+
+    /* features section */
+    .fb-66 .features-card{
+        display: flex;
+    }
+
+    .features-card img{
+        max-width: 100%;
+    }
+
+    figure{
+        align-self: flex-end;
     }
 
     /* planning section */
