@@ -63,6 +63,11 @@ body{
     background-color: #333;
 }
 
+.btn{
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
 /* header */
 #fixed-header{
     background-color: var(--blue);
@@ -75,16 +80,31 @@ body{
     z-index: 2;
 }
 
-#fixed-header div{
+#fixed-header:first-child div{
     justify-content: space-between;
     align-items: center;
 }
 
-#fixed-header .navbar{
-    display: none;
+#fixed-header a{
+    color: #fff;
+    font-size: 30px;
 }
 
+#fixed-header .navbar{
+    display: none;
+    list-style-type: none;
+}
 
+#fixed-header .navbar li{
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+#fixed-header .navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    
+}
 
 /* features */
 .features-card{
