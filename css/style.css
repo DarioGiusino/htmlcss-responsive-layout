@@ -97,6 +97,16 @@ body{
         flex-wrap: wrap;
         align-content: flex-start;
     }
+
+    /* benefits section */
+    #benefits .col{
+        flex-basis: 50%;
+    }
+
+    /* about section */
+    #about .col{
+        flex-basis: 50%;
+    }
 }
 
 /* dai 992px*/
@@ -118,5 +128,10 @@ body{
     /* planning section */
     #planning .col{
         flex-basis: 50%;
+    }
+
+    /* benefits section */
+    #benefits .col{
+        flex-basis: calc(100% / 3);
     }
 }
