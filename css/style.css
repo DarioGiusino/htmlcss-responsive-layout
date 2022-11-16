@@ -31,6 +31,14 @@ body{
     flex-basis: calc(100% / 3);
 }
 
+.fb-40{
+    flex-basis: 40%;
+}
+
+.fb-60{
+    flex-basis: 60%;
+}
+
 .fb-66{
     flex-basis: calc(100% / 3 * 2);
 }
@@ -100,11 +108,6 @@ body{
 
     /* benefits section */
     #benefits .col{
-        flex-basis: 50%;
-    }
-
-    /* about section */
-    #about .col{
         flex-basis: 50%;
     }
 }
