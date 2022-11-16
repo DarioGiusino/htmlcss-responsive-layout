@@ -8,6 +8,7 @@
 :root{
     --blue: #0084fd;
     --lightblue: #b5ddff;
+    --purple: #9792e4;
 }
 
 /* generics */
@@ -18,13 +19,12 @@ body{
 
 /* utilities */
 .container{
-    max-width: 550px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .fb-33{
@@ -33,6 +33,22 @@ body{
 
 .fb-66{
     flex-basis: calc(100% / 3 * 2);
+}
+
+.row{
+    margin: 20px -20px;
+}
+
+.col{
+    padding: 20px;
+}
+
+.bg-purple{
+    background-color: #9792e4;
+}
+
+.bg-white{
+    background-color: #fff;
 }
 
 /* header */
@@ -59,15 +75,7 @@ body{
 
 
 /* features */
-.row{
-    margin: 20px -10px;
-}
-
-.col{
-    padding: 10px;
-}
-
-.card{
+.features-card{
     background-color: var(--lightblue);
     border-radius: 30px;
     min-height: 350px;
@@ -79,8 +87,9 @@ body{
 
 /* dai 768px*/
 @media screen and (min-width: 768px){
+    /* utilities */
     .container{
-        max-width: 742px;
+        max-width: 730px;
     }
 
     .row{
@@ -92,11 +101,17 @@ body{
 
 /* dai 992px*/
 @media screen and (min-width: 992px){
+    /* header */
     #fixed-header .navbar{
         display: flex;
     }
 
     .hamburger-menu{
         display: none;
+    }
+
+    /* planning section */
+    #planning .col{
+        flex-basis: 50%;
     }
 }
