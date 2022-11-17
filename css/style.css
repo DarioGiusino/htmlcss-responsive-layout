@@ -29,6 +29,7 @@ i{
 h3{
     font-size: 40px;
     margin-bottom: 30px;
+    text-transform: capitalize;
 }
 
 h5{
@@ -36,6 +37,7 @@ h5{
     font-weight: normal;
     font-size: 18px;
     padding: 30px 0px;
+    text-align: center;
 }
 
 /* utilities */
@@ -358,7 +360,51 @@ h5{
     display: inline-block;
 }
 
+/* get-started section */
+#get-started{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
 
+#get-started h1{
+    color: #fdc15f;
+    font-size: 80px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+#get-started p{
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.get-started-btn{
+    display: inline-block;
+    color: var(--purple);
+    background-color: #fff;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 35px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+#get-started ul{
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+}
+
+#get-started li:first-child{
+    list-style-type: none;
+}
+
+#get-started ul a{
+    color: #fff;
+}
 
 
 
