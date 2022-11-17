@@ -406,6 +406,19 @@ h5{
     color: #fff;
 }
 
+/* footer */
+footer{
+    color: #fff;
+    text-align: center;
+}
+
+footer p{
+    padding: 20px 0px;
+}
+
+footer a{
+    color: var(--purple);
+}
 
 
 /* responsive mobile-first (576px)*/
@@ -444,6 +457,11 @@ h5{
 
     .paragraph{
         text-align: left;
+    }
+
+    /* footer */
+    footer .container{
+        max-width: 400px;
     }
 }
 
