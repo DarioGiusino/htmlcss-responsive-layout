@@ -126,7 +126,6 @@ h5{
 #fixed-header .navbar a{
     text-decoration: none;
     font-size: 18px;
-    
 }
 
 #fixed-header li:last-child a{
@@ -279,6 +278,10 @@ h5{
     color: #fff;
     padding-top: 30px;
     text-align: center;
+}
+
+#benefits .row{
+    padding-bottom: 30px;
 }
 
 .benefits-card{
@@ -518,5 +521,12 @@ footer a{
     /* benefits section */
     #benefits .col{
         flex-basis: calc(100% / 3);
+    }
+}
+
+/* dai 1200px */
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1100px;
     }
 }
